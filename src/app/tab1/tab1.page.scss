@@ -5,24 +5,64 @@
 
 .orderHeader {
   background-color: red;
+  color: white
+}
+
+.headerIcon{
+  width: 20%;
+  height: 20%;
+
 }
 
 #orderList{
   
-    background-color: rgb(197, 38, 65);
+  ion-card {
+    border: 1px solid gray;
+
+
+    .buttonContainer{
   
+      ion-button {
+        margin-bottom: 10px;
+        background-color: #a1f8d1
+      }
+    }
+  }
+    background-color: rgb(197, 38, 65);
+    ion-label {
+      font-size: 22px;
+    }
  
 
     ion-card-title{
+      font-size: 20px;
       color: #404040
     }
 
+  
+
   ion-card-subtitle {
+    font-size: 12px;
     margin-top: 15px;
+  }
+
+  ion-segment {
+    padding-top: 10px;
+  }
+
+  ion-segment-button {
+    width:25%
+  }
+
+  ion-segment  ion-label{
+    font-size: 10px;
+    font-weight: lighter;
   }
 
   .user{
 
   }
+
+
   
 }
