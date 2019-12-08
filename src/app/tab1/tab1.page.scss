@@ -1,17 +1,17 @@
 .welcome-card img {
   max-height: 35vh;
   overflow: hidden;
+  margin-bottom: 20px !important;
 }
 
 .orderHeader {
   background-color: red;
-  color: white
+  color: white;
 }
 
 .headerIcon{
-  width: 20%;
-  height: 20%;
-
+  float: none;
+  
 }
 
 .noOrders{
@@ -43,7 +43,8 @@
 
       ion-button {
         margin-bottom: 10px;
-        background-color: #a1f8d1
+        background-color: #a1f8d1;
+        font-weight: bolder;
       }
     }
   }
@@ -75,15 +76,12 @@
   }
 
   ion-segment  ion-label{
-    font-size: 10px;
-    
-
+    font-size: 10px;    
   }
 
-  .user{
+.finsishButton{
+  height: 70px;
 
-  }
-
-
+}
   
 }
