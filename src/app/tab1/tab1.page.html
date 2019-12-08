@@ -9,7 +9,7 @@
 
 <ion-content id="orderList">
     <ion-card *ngFor="let item of orderList" class="welcome-card" >
-      <img src="/assets/shapes.svg" alt="" />
+      <ion-img class="cardTopImage" [src]="getImagePath(item)"></ion-img>
       <ion-card-header>
         <ion-card-title>{{ item.name }}</ion-card-title>
 
@@ -33,7 +33,7 @@
         <ion-card-subtitle class="user">USER: {{ item.user }} </ion-card-subtitle>
       </ion-card-header>
       <div class="buttonContainer">
-        <ion-button fill="outline" expand="full" color="success">Finish Order</ion-button>
+        <ion-button fill="outline" expand="block" color="success">Finish Order</ion-button>
       </div>
     </ion-card>
 

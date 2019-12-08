@@ -11,14 +11,18 @@ export class Tab1Page {
   
 
   public orderList: any = [
-    {id: "29734", name: "Bacalhau a Brás", price: 5.99, user: "DiogoN", state: STATE.COOKING, image: "1"},
-    {id: "98312", name: "Pernas de Frango", price: 4.39,  user: "Asgard",state: STATE.COOKING, image: "2"},
-    {id: "42355", name: "Caldo Verde", price: 1.99,  user: "RogueLiker", state: STATE.COOKING, image: "3"},
-    {id: "19347", name: "Cozido a Portuguesa", price: 12.45,  user: "Megaman2", state: STATE.COOKING, image: "4"},
+    {id: "29734", name: "Bacalhau a Brás", price: 5.99, user: "DiogoN", state: STATE.COOKING, image: "bacalhau.jpg"},
+    {id: "98312", name: "Pernas de Frango", price: 4.39,  user: "Asgard",state: STATE.COOKING, image: "frango.png"},
+    {id: "42355", name: "Caldo Verde", price: 1.99,  user: "RogueLiker", state: STATE.COOKING, image: "caldo.jpg"},
+    {id: "19347", name: "Cozido a Portuguesa", price: 12.45,  user: "Megaman2", state: STATE.COOKING, image: "cozido.jpg"},
   ];
 
   constructor() {
 
+  }
+
+  public getImagePath(item: any): string{
+    return `${"/assets/menu/"}${item.image}`
   }
 
 
