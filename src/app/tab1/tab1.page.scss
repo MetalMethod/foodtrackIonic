@@ -14,6 +14,15 @@
 
 }
 
+.noOrders{
+  font-size: 16px !important;
+  float:none  !important;
+  text-align: center  !important;
+  width: 100%;
+  color: #747373;
+  margin-top:80% !important;
+}
+
 #orderList{
   
   ion-card {
@@ -21,6 +30,7 @@
 
 
 .cardTopImage{
+  margin-top: 40px !important;
   width: 350px;
   height: 140px;
   background-position: center;
@@ -30,7 +40,7 @@
 
 
     .buttonContainer{
-  
+
       ion-button {
         margin-bottom: 10px;
         background-color: #a1f8d1

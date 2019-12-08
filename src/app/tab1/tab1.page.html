@@ -8,6 +8,9 @@
 </ion-header>
 
 <ion-content id="orderList">
+
+    <div class="noOrders" *ngIf="checkNoOrders()">There are currently no orders.</div>
+  
     <ion-card *ngFor="let item of orderList" class="welcome-card" >
       <ion-img class="cardTopImage" [src]="getImagePath(item)"></ion-img>
       <ion-card-header>

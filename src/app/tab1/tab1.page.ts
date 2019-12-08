@@ -28,9 +28,11 @@ export class Tab1Page {
 
   public finishOrder(item){
     this.orderList = this.orderList.filter((el)=> el.id !== item.id)
-    console.log(this.orderList)
   }
 
 
+    public checkNoOrders(): boolean{
+      return this.orderList.length === 0;
+    }
 
 }
