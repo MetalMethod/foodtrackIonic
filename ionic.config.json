@@ -1,5 +1,7 @@
 {
   "name": "foodtrack",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
